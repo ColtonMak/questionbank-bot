@@ -123,7 +123,7 @@ class Sheets(commands.Cog):
             await ctx.send("Timed out. Try again")
 
         try:
-            line = random.randrange(2,self.line-1)
+            line = random.randrange(2,self.line)
             question, answer = self.getQuestion(line)
             await ctx.send(f"Question: {question}\nAnswer: ||{answer}||")
 
